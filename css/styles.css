@@ -72,6 +72,9 @@ section{
     background-color: var(--verde);
 }
 
+#canvas{
+    width:100%
+}
 
 .botones{
     display: flex;
