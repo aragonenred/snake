@@ -1,0 +1,146 @@
+:root{
+    --verde: #959e80;
+    --negro:#181619;
+    --heebo: 'Heebo', sans-serif;
+    --amarillo: #fde02d;
+}
+
+p{
+    margin:0;
+}
+body{
+    font-family: var(--heebo);
+    color: var(--verde);
+    background-color: #181619;
+}
+
+section{
+    margin-top: 20px;
+}
+
+.game{
+    display: flex;
+    
+}
+@media(min-width:420px) {
+    .game{
+        justify-content: center;
+    }
+}
+
+.game .img{
+    background-image: url('../img/brick1.png');
+    width: 30px;
+    margin-right: 10px;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+   
+    padding: 20px ;
+    border: solid 2px white;    
+    position: relative;
+}
+
+
+.conteiner h1{
+    position: absolute;
+    top: -12px;
+    background-color: var(--negro);
+    margin: 0;
+    padding: 0 10px;
+    font-family: var(--heebo);
+    font-size: 15px;
+    font-weight: 300;
+    color:white;
+}
+
+.score{
+    margin-left: 1rem;
+    margin-top: 10px;
+    text-align: right;
+}
+
+
+.canva{
+    padding: 10px;
+    background-color: var(--verde);
+}
+
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin:0 auto;
+    color: white;
+    font-size: 10px;
+}
+.boton1{
+    background-color: var(--amarillo);
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    margin: 0 50px 0 50px;  
+}
+.boton-mando{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-left: 15px;
+    margin-top: 20px;
+}
+.boton-mando .up{
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+.boton-mando .left{
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+.boton-mando .right{
+    grid-column: 4 / 5;
+    grid-row: 2;
+}
+.boton-mando .down{
+    grid-column: 3 / 4;
+    grid-row: 3;
+}
+.boton-mando p{
+    background-color: var(--amarillo);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin: 0;  
+}
+.big-boton{
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.big-boton p{
+    background-color: var(--amarillo);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 0;  
+}
+
+.gameOver{
+        position: absolute;
+        right: 0;
+        bottom: 130px;
+        max-height: 200px;
+        overflow: hidden;
+}
+.gameOver img{
+    transition: all ease 1s;
+    position: relative  ;
+}
+
+.gameOver .ocultar{
+    bottom: -200px;
+}
+.gameOver .mostrar{
+    bottom: 0;
+}
