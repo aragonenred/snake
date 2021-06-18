@@ -35,15 +35,14 @@ function Game(){
 }
 
 function mensajeGameOver(id){
-    if (id == 0){
-
-        num = (Math.random() * (3 - 1)) + 1
+        num = (Math.random() * (4 - 1)) + 1
         num = Math.round(num);
-
+    if (id == 0){
         imgGameOver.setAttribute('src', 'img/GameOver/end_v1_' + num + '.png');
         imgGameOver.classList.remove('ocultar');
         imgGameOver.classList.add('mostrar');
     }else if(id == 1){
+        console.log(num);
         imgGameOver.setAttribute('src', 'img/GameOver/end_v2_' + num + '.png');
         imgGameOver.classList.remove('ocultar');
         imgGameOver.classList.add('mostrar');

@@ -50,7 +50,7 @@ function Snake() {
                 }
                 
                 this.draw();     
-            }, 150);  
+            }, 100);  
         }else{
             clearInterval(onMove);
         }     

@@ -31,9 +31,19 @@ section{
 
 .game .img{
     background-image: url('../img/brick1.png');
-    width: 30px;
-    margin-right: 10px;
+    width: 100%;
 }
+
+@media(min-width:420px){
+
+    .game .img{
+       margin-left: 5px;
+       width: 30px;
+
+    }
+
+}
+
 
 .conteiner{
     display: flex;
