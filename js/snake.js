@@ -21,8 +21,7 @@ function Snake() {
         this.moved = true; 
     }
  
-    this.move = function(move){
-        
+    this.move = function(move){  
         if(move){
             onMove = setInterval(() => {
                 ctx.fillStyle = backgroundColor; 
@@ -51,7 +50,7 @@ function Snake() {
                 }
                 
                 this.draw();     
-            }, 100);  
+            }, 150);  
         }else{
             clearInterval(onMove);
         }     
