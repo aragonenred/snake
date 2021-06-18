@@ -133,9 +133,19 @@ section{
         max-height: 200px;
         overflow: hidden;
 }
+
 .gameOver img{
     transition: all ease 1s;
     position: relative  ;
+    width: 80%;
+}
+
+@media(min-width:420px){
+    .gameOver img{
+        width: 100%;
+    }
+
+
 }
 
 .gameOver .ocultar{
