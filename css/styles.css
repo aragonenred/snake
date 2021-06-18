@@ -1,4 +1,4 @@
-/*v1.0**/
+/*v1.1 Mobile First**/
 :root{
     --verde: #959e80;
     --negro:#181619;
@@ -70,26 +70,34 @@ section{
     background-color: var(--verde);
 }
 
-#canva{
-    width: 80%;
+#canvas{
+    width: 225px;
+    height: 300px;
 }
 
 @media(min-width:420px){
-    #canva{
-        width: 100%;
+    #canvas{
+        width: 300px;
+        height: 400px;
     }
-
 }
 
 
 .botones{
     display: flex;
-    justify-content: space-between;
-    width: 500px;
+    justify-content: center;
     margin:0 auto;
     color: white;
     font-size: 10px;
 }
+@media(min-width:420px){
+    .botones{
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
+}
+
 .boton1{
     background-color: var(--amarillo);
     border-radius: 50%;
@@ -97,28 +105,37 @@ section{
     width: 10px;
     margin: 0 50px 0 50px;  
 }
+
 .boton-mando{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-left: 15px;
+    grid-template-columns: repeat(3, 1fr); 
     margin-top: 20px;
+    column-gap: 70px;
+    row-gap: 20px;
 }
-.boton-mando .up{
-    grid-column: 3 / 4;
-    grid-row: 1;
+
+@media(min-width:420px){
+    .boton-mando{
+        margin-left: 15px;
+        margin-top: 20px;  
+        column-gap: 0;
+        row-gap: 0;    
+    }
 }
-.boton-mando .left{
+
+.boton-mando .grid-col-2-3{
     grid-column: 2 / 3;
-    grid-row: 2;
 }
-.boton-mando .right{
-    grid-column: 4 / 5;
-    grid-row: 2;
+.boton-mando .grid-col-1-2{
+    grid-column: 1 / 2;  
 }
-.boton-mando .down{
+.boton-mando .grid-col-3-4{
     grid-column: 3 / 4;
-    grid-row: 3;
 }
+.boton-mando .grid-col-2-3{
+    grid-column: 2 / 3;
+}
+
 .boton-mando p{
     background-color: var(--amarillo);
     border-radius: 50%;
@@ -126,17 +143,21 @@ section{
     width: 20px;
     margin: 0;  
 }
-.big-boton{
-    margin-top: 20px;
-    margin-right: 25px;
+
+@media(min-width:420px){
+    .big-boton{
+        margin-top: 20px;
+        margin-right: 25px;
+    }
+    .big-boton p{
+        background-color: var(--amarillo);
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        margin: 0;  
+    }
 }
-.big-boton p{
-    background-color: var(--amarillo);
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    margin: 0;  
-}
+
 
 .gameOver{
         position: absolute;
