@@ -113,6 +113,7 @@ section{
     color: white;
     font-size: 10px;
 }
+
 @media(min-width:420px){
     .botones{
         display: flex;
@@ -120,13 +121,24 @@ section{
         width: 500px;
     }
 }
-
 .boton1{
+    display: flex;
+}
+
+.boton1 p{
     background-color: var(--amarillo);
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    margin: 0 50px 0 50px;  
+    margin: 0 50px 0 50px;
+}
+.leyenda{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leyenda p{
+    flex-basis: 25%;
 }
 
 .boton-mando{
