@@ -70,10 +70,6 @@ section{
     background-color: var(--verde);
 }
 
-#canvas{
-    width:80%;
-
-}
 
 .botones{
     display: flex;
