@@ -36,11 +36,15 @@ function Game(){
 
 function mensajeGameOver(id){
     if (id == 0){
-        imgGameOver.setAttribute('src', 'img/GameOver/end_1.png');
+
+        num = (Math.random() * (3 - 1)) + 1
+        num = Math.round(num);
+
+        imgGameOver.setAttribute('src', 'img/GameOver/end_v1_' + num + '.png');
         imgGameOver.classList.remove('ocultar');
         imgGameOver.classList.add('mostrar');
     }else if(id == 1){
-        imgGameOver.setAttribute('src', 'img/GameOver/end_2.png');
+        imgGameOver.setAttribute('src', 'img/GameOver/end_v2_' + num + '.png');
         imgGameOver.classList.remove('ocultar');
         imgGameOver.classList.add('mostrar');
     }
