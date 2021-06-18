@@ -69,6 +69,11 @@ section{
     padding: 10px;
     background-color: var(--verde);
 }
+#canvas{
+    width:225px;
+    height: 300px;
+
+}
 
 
 .botones{
